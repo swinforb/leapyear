@@ -3,6 +3,11 @@
 
 def main():
 	year = input("Please enter a year: ")
+	if year.isdigit():
+		year = int(year)
+	else:
+		print('That is not a number')
+		return
 	fourYears = year%4
 	hundredYears = year%100
 	fhYears = year%400
